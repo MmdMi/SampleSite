@@ -1,0 +1,68 @@
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#MainDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    background: linear-gradient(270deg, #bc0d0d, #0d15bc, #13bc0d);
+    background-size: 600% 600%;
+    -webkit-animation: AnimationName 35s ease infinite;
+    -moz-animation: AnimationName 35s ease infinite;
+    animation: AnimationName 35s ease infinite;
+}
+
+@-webkit-keyframes AnimationName{
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+#MainRow{
+    width: 100%;
+    font-size: 64px;
+    color:#ddd;
+    text-align: center;
+}
+#LoginBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    min-width: 350px;
+    min-height: 350px;
+    border-radius: 6px;
+    background-color: rgba(30,30,30,0.5);
+    color:#ddd;
+}
+#LoginBox>input{
+    margin: 6px;
+}
+.ShowBox{
+    position: absolute;
+    padding: 20px;
+    min-width: 350px;
+    max-width: 90%;
+    min-height: 350px;
+    max-height: 80%;
+    border-radius: 6px;
+    background-color: #dddddd;
+    color:#333333;
+}
+.ShowBox>hr{border-color: #333333;}
